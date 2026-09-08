@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zásady ochrany osobních údajů — RecAPPy Book</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    line-height: 1.6;
+    color: #1a1a1a;
+    background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #eee; background: #121212; }
+    a { color: #6db3f2; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  .updated { color: #767676; font-size: 0.9rem; margin-bottom: 32px; }
+  h2 { font-size: 1.15rem; margin-top: 36px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  code { background: rgba(127,127,127,0.15); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  .contact { background: rgba(127,127,127,0.08); padding: 16px 20px; border-radius: 10px; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<h1>Zásady ochrany osobních údajů</h1>
+<p class="updated">Aplikace RecAPPy Book · Platné od 8. 9. 2026</p>
+
+<p>
+  Tyto zásady popisují, jaké osobní údaje aplikace RecAPPy Book (dále jen „aplikace“) zpracovává,
+  proč je zpracovává a jaká máte v souvislosti s tím práva. Provozovatelem aplikace a správcem
+  osobních údajů je Martin Žajdlík.
+</p>
+
+<h2>Jaké údaje aplikace zpracovává</h2>
+<ul>
+  <li><strong>Účet:</strong> uživatelské jméno a e-mailová adresa zadané při registraci a hashované heslo
+      (heslo se nikdy neukládá v čitelné podobě).</li>
+  <li><strong>Přihlašovací tokeny:</strong> přístupový a obnovovací token (JWT), uložené bezpečně
+      v Keychainu vašeho zařízení — slouží k udržení přihlášení.</li>
+  <li><strong>Obsah, který vytvoříte:</strong> recepty, jejich texty a fotografie, které v aplikaci
+      přidáte. Fotografie jsou uloženy u třetí strany Cloudinary (viz níže).</li>
+  <li><strong>Oblíbené položky a jídelníček:</strong> vaše uložené oblíbené recepty a naplánovaný jídelníček.</li>
+  <li><strong>Technické provozní záznamy:</strong> standardní serverové logy (např. IP adresa, čas
+      požadavku) vznikající při provozu backendu, používané výhradně pro diagnostiku a bezpečnost provozu.</li>
+</ul>
+
+<h2>K čemu údaje používáme</h2>
+<ul>
+  <li>Vytvoření a správa vašeho uživatelského účtu a přihlašování.</li>
+  <li>Zobrazení a správa receptů, oblíbených položek a jídelníčku v rámci aplikace.</li>
+  <li>Ověření e-mailové adresy a obnova zapomenutého hesla (pokud je tato funkce aktivní).</li>
+  <li>Provoz, zabezpečení a diagnostika technických problémů aplikace a serveru.</li>
+</ul>
+
+<h2>Komu údaje předáváme</h2>
+<p>Údaje nesdílíme s třetími stranami za účelem reklamy ani je neprodáváme. Pro provoz aplikace využíváme tyto zpracovatele:</p>
+<ul>
+  <li><strong>Render</strong> — hosting backendové aplikace a databáze.</li>
+  <li><strong>Cloudinary</strong> — ukládání a optimalizace fotografií receptů.</li>
+</ul>
+
+<h2>Jak dlouho údaje uchováváme</h2>
+<p>
+  Údaje uchováváme po dobu existence vašeho účtu. Obnovovací tokeny mají platnost 30 dní a poté
+  automaticky expirují. Údaje můžete kdykoliv nechat smazat — viz níže.
+</p>
+
+<h2>Smazání účtu a údajů</h2>
+<p>
+  Svůj účet můžete kdykoliv smazat přímo v aplikaci (menu profilu → „Smazat profil"). Smazáním účtu
+  se odstraní váš uživatelský záznam, vaše recepty (včetně fotografií uložených na Cloudinary),
+  přihlašovací tokeny a záznamy o oblíbených položkách. Pokud chcete požádat o smazání údajů jinak,
+  napište nám na kontaktní e-mail níže.
+</p>
+
+<h2>Vaše práva</h2>
+<p>
+  V souladu s GDPR máte právo na přístup ke svým osobním údajům, jejich opravu, výmaz, omezení
+  zpracování a přenositelnost. Pro uplatnění těchto práv nás kontaktujte na e-mailu níže.
+</p>
+
+<h2>Děti</h2>
+<p>Aplikace není určena dětem mladším 13 let a vědomě od nich nesbírá osobní údaje.</p>
+
+<h2>Změny těchto zásad</h2>
+<p>Tyto zásady můžeme čas od času aktualizovat. O významných změnách vás budeme informovat v rámci aplikace.</p>
+
+<h2>Kontakt</h2>
+<div class="contact">
+  <p>Máte dotaz ohledně zpracování osobních údajů, nebo chcete nahlásit problém či nevhodný obsah?</p>
+  <p>E-mail: <a href="mailto:m.zajdlik44@gmail.com">m.zajdlik44@gmail.com</a></p>
+</div>
+
+</body>
+</html>
